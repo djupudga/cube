@@ -31,7 +31,7 @@ $(function(){
 
                 // this.el.style[transformProp] = "rotateX("+this.x+"deg)";
                 // this.el.style[transformProp] = "rotateX("+this.x+"deg) rotateY("+this.y+"deg)";
-                this.el.style[transformProp] = "rotateY("+this.y+"deg)";
+                this.el.style[transformProp] = "translateZ(-207px) rotateY("+this.y+"deg)";
                 // if (this.y > 0) {
                 //     viewport.rotation = viewport.rotation - 90
                 // } else {
@@ -43,7 +43,7 @@ $(function(){
             finish: function() {
                 var rotation = Math.round(this.y/90) * 90
                 this.y = rotation
-                this.el.style[transformProp] = "rotateY("+rotation+"deg)";
+                this.el.style[transformProp] = "translateZ(-207px) rotateY("+rotation+"deg)";
             },
             reset: function() {
                 this.move({x: 0, y: 0});

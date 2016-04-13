@@ -29,6 +29,7 @@ body {
   height: 100%;
   backface-visibility: visible;
   transform-style: preserve-3d;
+  transform: translateZ(-207px);
 }
 .face {
   display: block;
